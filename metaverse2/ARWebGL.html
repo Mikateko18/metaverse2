@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+
+    <title>WebGL</title>
+</head>
+<body style="background-color: #012c50;width: 100%;height: 200px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style = "background-color: #fff;">
+        <img class="logo"src="https://www.csir.co.za/sites/all/themes/csir/logo.png" alt="csir-image">
+        <div id="dhet">
+        <img class="logo"src="https://www.dhet.gov.za/SiteAssets/Images/DoHET-Logo.png"
+            alt="dhet-image" >  
+          </div>
+          <div id="dsi">
+            <img class="logo"src="https://blogs.sun.ac.za/cib/files/2020/03/DSI-Logo.png"
+                alt="dsi-image" >  
+              </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link active" style = "color: #012c50; font-weight: bold; font-size:18px;"  href="success.html">Home </a>
+                  <a class="nav-item nav-link active" style = "color: #012c50;font-weight: bold; font-size:18px;" href="Help.html">Help</a>
+                </div>
+              </div>
+            </nav>
+            <div class="container" align = "center">
+                <div class= "col">
+                  <div class="row-md-6">
+                <h1 style="padding-right: 60px; color: white; font-size:40px;">Data Analytics For Post School Systems
+                </h1>
+                <h1 style="padding-right: 60px; color: white; ">Emerging Digital Technologies for 4IR Research center
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="container" align = "center">
+            <div class= "col">
+              <div class="row-md-6">
+            <h1 style="padding-right: 60px; color: white; position: relative; top: 60px;right:25px ">Please select a category below:
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="container" >
+        <div class= "col">
+          <div class="row-md-6">
+        <h1 style="padding-right: 60px; color: white; position: relative; top: 100px;left:195px;">Data:
+        </h1>
+        <div id="btn1">
+            <a >
+                <button class="btn  btn-primary btn-lg" id="btnHet" type="submit" style="position: relative; top: 55px;left:267px; font-weight: bold;">HETMIS DATA</button> 
+          </a>
+          <p style="color: #fff; position: relative; top: 60px;left:318px; font-weight: bold;font-size:13px">Data from Higher education <br> institutions (Universities)</p>
+    
+        </div>
+        <div>
+            <a >
+                <button class="btn  btn-primary btn-lg"  id="btnTVE" type="submit" style="position: relative; left:500px;bottom:25px; font-weight: bold; background-color: white;color:#012c50;">TVETMIS DATA</button> 
+          </a>
+          <p style="color: #fff; position: relative; bottom:21px;left:500px; font-weight: bold;font-size:13px"> Data from Technical <br> vocational institutions</p>
+    
+        </div>
+        
+        <div>
+            <a>
+                <button class="btn  btn-primary btn-lg" id="btnALL" type="submit" style="position: relative; left:685px;bottom:102px; font-weight: bold; background-color: white;color:#012c50;">ALL DATA</button> 
+          </a>
+          <p style="color: #fff; position: relative; bottom:97px;left:686px; font-weight: bold;font-size:13px"> Combined data from Higher <br> education and technical <br> vocational institutions</p>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" >
+    <div class= "col">
+      <div class="row-md-6">
+    <h1 style="padding-right: 60px; color: white; position: relative; bottom: 80px;left:140px;">Use cases:
+    </h1>
+    <div >
+        <a >
+            <button class="btn  btn-primary btn-lg" id="btnENR" type="submit" style="position: relative; left:317px;bottom:120px; font-weight: bold; background-color: white;color:#012c50;">ENROLLMENT</button> 
+      </a>
+      <p style="color: #fff; position: relative; bottom:117px;left:317px; font-weight: bold;font-size:13px">View enrollment <br> volumes over time, <br> for specific institutions</p>
+    </div>
+    <div >
+        <a >
+            <button class="btn  btn-primary btn-lg" id="btnACC" type="submit" style="position: relative; left:505px;bottom:220px; font-weight: bold; background-color: white;color:#012c50;">ACCESS</button> 
+      </a>
+      <p style="color: #fff; position: relative; left:505px;bottom:217px; font-weight: bold;font-size:13px">View statistical <br> overviews of student <br> access modes for <br> specific institutions</p>
+    
+    </div>
+    <div >
+        <a>
+            <button class="btn  btn-primary btn-lg" id="btnGEN" type="submit"style="position: relative; left:688px;bottom:340px; font-weight: bold; background-color: white;color:#012c50;">GENDER</button> 
+      </a>
+      <p style="color: #ffffff; position: relative; left:688px;bottom:337px; font-weight: bold;font-size:13px">View statistical <br> overviews of student <br> access modes for <br> specific institutions</p>
+    
+    </div>
+    <div >
+        <a href="AR.html">
+            <button class="btn  btn-primary btn-lg" type="submit" style="position: relative; left:850px;bottom:337px; font-weight: bold; background-color: white;color:#012c50;"href="AR.html">GO>>></button> 
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript" >
+ 
+  const btnHet = document.getElementById('btnHet');
+  btnHet.addEventListener('click', function onClick() {
+    btnHet.style.backgroundColor = 'blue';
+    btnHet.style.color = 'white';
+    btnALL.style.backgroundColor = 'white';
+    btnALL.style.color = '#012c50';
+    btnTVE.style.backgroundColor = 'white';
+    btnTVE.style.color = '#012c50';
+  });
+
+  const btnTVE = document.getElementById('btnTVE');
+  btnTVE.addEventListener('click', function onClick() {
+    btnTVE.style.backgroundColor = 'blue';
+    btnTVE.style.color = 'white';
+    btnHet.style.backgroundColor = 'white';
+    btnHet.style.color = '#012c50';
+    btnALL.style.backgroundColor = 'white';
+    btnALL.style.color = '#012c50';
+  });
+  const btnALL = document.getElementById('btnALL');
+  btnALL.addEventListener('click', function onClick() {
+    btnALL.style.backgroundColor = 'blue';
+    btnALL.style.color = 'white';
+    btnHet.style.backgroundColor = 'white';
+    btnHet.style.color = '#012c50';
+    btnTVE.style.backgroundColor = 'white';
+    btnTVE.style.color = '#012c50';
+  });
+  const btnENR = document.getElementById('btnENR');
+  btnENR.addEventListener('click', function onClick() {
+    btnENR.style.backgroundColor = 'blue';
+    btnENR.style.color = 'white';
+    btnGEN.style.backgroundColor = 'white';
+    btnGEN.style.color = '#012c50';
+    btnACC.style.backgroundColor = 'white';
+    btnACC.style.color = '#012c50';
+  });
+  const btnACC = document.getElementById('btnACC');
+  btnACC.addEventListener('click', function onClick() {
+    btnACC.style.backgroundColor = 'blue';
+    btnACC.style.color = 'white';
+    btnENR.style.backgroundColor = 'white';
+    btnENR.style.color = '#012c50';
+    btnGEN.style.backgroundColor = 'white';
+    btnGEN.style.color = '#012c50';
+  });
+  const btnGEN = document.getElementById('btnGEN');
+  btnGEN.addEventListener('click', function onClick() {
+    btnGEN.style.backgroundColor = 'blue';
+    btnGEN.style.color = 'white';
+    btnACC.style.backgroundColor = 'white';
+    btnACC.style.color = '#012c50';
+    btnENR.style.backgroundColor = 'white';
+    btnENR.style.color = '#012c50';
+    
+
+  });
+  
+  
+  </script>
+</body>
+</html>

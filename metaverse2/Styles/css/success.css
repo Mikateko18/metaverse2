@@ -1,0 +1,12 @@
+body{
+  background-color: #012c50;
+  background-image: url('https://t3.ftcdn.net/jpg/04/17/16/68/360_F_417166838_CKnZyAVxQ7c5xkMX1b18W61CFg8ope7r.jpg')
+  }
+.jumbotron{
+  margin-top: 100px;
+}
+h1, p{
+  text-align: center;
+  color: #012c50;
+  font-weight: bold;
+}
